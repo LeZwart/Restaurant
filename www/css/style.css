@@ -1,0 +1,82 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+
+    background-image: url('../img/oostenrijk.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+
+    overflow: hidden;
+}
+
+body {
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.123);
+
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+    color: #FFF;
+    text-align: center;
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2%;
+    background-color: #ffffff2f;
+    font-size: 100%;
+    width: 40%;
+    height: 70%;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.main-page-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2%;
+    background-color: #ffffff77;
+    font-size: 100%;
+    width: 80%;
+    height: 40%;
+    border-radius: 10px;
+    border-style: outset;
+    border-width: 2px;
+    border-color: #ffffff;
+    text-decoration: none;
+    color: #000;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.main-page-button:hover {
+    background-color: #ffffff2f;
+    box-shadow: 0 0 10px 5px #ffffff2f;
+    font-size: 120%;
+    border-style: inset;
+    border-color: #ffffff49;
+    transition: all 0.3s ease-in-out;
+}
+
+#text-section {
+    text-shadow: 0 -1px 3px #000;
+}
