@@ -8,7 +8,7 @@
     </head>
     <body>
         <main>
-            <section class="login-section">
+            <section class="form-section">
                 <h1>Inloggen</h1>
                 <form action="login_handler.php" class="login-form" method="post">
                     <div class="login-form-group">
@@ -20,6 +20,7 @@
                         <input type="password" id="password" name="password" class="login-form-input">
                     </div>
                     <button type="submit" class="login-button">Log in</button>
+                    <a href="registratie.php">Heb je nog geen account? Maak er een aan</a>
                 </form>
             </section>
         </main>

@@ -3,8 +3,6 @@ const food_display = document.getElementById('food-display');
 function show_food(i) {
     const path = `../img/showcase_images/${i}.jpg`;
 
-    let 
-
     food_display.getAttributeNode('src').value = path;
 }
 
