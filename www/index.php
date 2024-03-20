@@ -11,7 +11,7 @@
             <section class="main-section" id="text-section">
                 <h1>Welkom bij het Oostenrijkse NOVA Restaurant</h1>
                 <p>Een heerlijke en gezellige avond beleef je bij ons!</p>
-                <img src="img/showcase_images/WienerSchnitzel.jpg" alt="Wiener Schnitzel" id="food-display">
+                <img src="img/showcase_images/WienerSchnitzel.jpg" id="food-display" onclick="">
                 <!-- Make this change images every like 10 seconds or so -->
             </section>
             <section class="main-section" id="button-section">
@@ -20,5 +20,7 @@
                 <a href="menu.php" class="main-page-button">Menu</a>
             </section>
         </main>
+        
+        <script src="js/script.js"></script>
     </body>
 </html>
