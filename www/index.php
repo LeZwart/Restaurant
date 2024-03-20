@@ -8,14 +8,15 @@
     </head>
     <body>
         <main class="main-page-index">
-            <section class="section-index" id="text-section">
+            <section class="main-section" id="text-section">
                 <h1>Welkom bij het Oostenrijkse NOVA Restaurant</h1>
                 <p>Een heerlijke en gezellige avond beleef je bij ons!</p>
-                <img src="/www/img/WienerSchnitzel.jpg" alt="Wiener Schnitzel">
+                <img src="img/showcase_images/WienerSchnitzel.jpg" alt="Wiener Schnitzel" id="food-display">
+                <!-- Make this change images every like 10 seconds or so -->
             </section>
-            <section class="section-index" id="button-section">
-                <a href="account.php" class="main-page-button">Account aanmaken</a>
-                <a href="#" class="main-page-button">Inloggen</a>
+            <section class="main-section" id="button-section">
+                <a href="registratie.php" class="main-page-button">Account aanmaken</a>
+                <a href="login.php" class="main-page-button">Inloggen</a>
                 <a href="menu.php" class="main-page-button">Menu</a>
             </section>
         </main>
