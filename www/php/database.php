@@ -12,3 +12,23 @@ try {
     echo "Error: " . $e->getMessage();
 }
 
+
+// Auto update session
+// Checkt of de gebruiker is ingelogd en haalt de gebruiker gegevens op uit de database
+// zodat ze up-to-date zijn
+if (isset($_SESSION["ID"])) {
+    $sql = "SELECT * FROM gebruiker WHERE gebruikerid = :gebruikerid";
+    $stmt = $conn->prepare($sql);
+    $stmt->bindParam(":gebruikerid", $_SESSION["ID"]);
+    $stmt->execute();
+
+    $result = $stmt->fetch(PDO::FETCH_ASSOC);
+    if ($result) {
+        $_SESSION["rol"] = $result["rol"];
+        $_SESSION["firstname"] = $result["voornaam"];
+        $_SESSION["lastname"] = $result["achternaam"];
+    } else {
+        session_destroy();
+        header("Location: index.php");
+    }
+}

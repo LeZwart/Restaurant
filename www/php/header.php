@@ -1,9 +1,11 @@
 <Header>
-    <nav>
-        <ul>
-            <li><a class="nav-button" href="index.php">Home</a></li>
-            <li><a class="nav-button" href="#">Menu</a></li>
-            <li><a class="nav-button" href="#">Account aanmaken</a></li>
+    <nav class="nav-header">
+        <ul class="ul-header">
+            <li>NOVA Restaurant</li>
+            <li><a href="dashboard.php">Dashboard</a></li>
+            <li><a href="menu.php">Menu</a></li>
+            <li><a href="bestellingen.php">Bestellingen</a></li>
+            <li><a href="logout.php">Uitloggen</a></li>
         </ul>
     </nav>
 </Header>

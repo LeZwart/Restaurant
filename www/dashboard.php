@@ -1,6 +1,6 @@
 <?php
 session_start();
-
+require "php/database.php";
 if (!isset($_SESSION["ID"])) {
     header("Location: login.php");
     exit();
@@ -19,7 +19,11 @@ if (!isset($_SESSION["ID"])) {
     <body>
         <?php require "php/header.php"; ?>
         <main>
-
+            <section class="main-section">
+                <h1>Welkom bij NOVA Restaurant</h1>
+                <p>Welkom bij NOVA Restaurant, <?php echo $_SESSION["firstname"]; ?>!</p>
+                <p>Je bent nu ingelogd en kunt beginnen met het bestellen van heerlijke gerechten.</p>
+            </section>
         </main>
         <?php require "php/footer.php"; ?>
     </body>

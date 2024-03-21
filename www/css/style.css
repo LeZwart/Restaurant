@@ -237,3 +237,32 @@ main {
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
+
+.nav-header {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgba(255, 255, 255, 0.167), rgba(255, 255, 255, 0));
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+li {
+    display: inline-block;
+}
+
+li a {
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+}
+
+li a:hover {
+    background-color: #ffffff2f;
+    color: #000;
+    transition: all 0.3s ease-in-out;
+}

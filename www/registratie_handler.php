@@ -53,13 +53,20 @@ $stmt_gebruiker->bindParam(":email", $email);
 $stmt_gebruiker->bindParam(":wachtwoord", $wachtwoord);
 $stmt_gebruiker->bindParam(":voornaam", $voornaam);
 $stmt_gebruiker->bindParam(":achternaam", $achternaam);
-$stmt_gebruiker->bindParam(":adresid", $conn->lastInsertId());
+$lastInsertId = $conn->lastInsertId();
+$stmt_gebruiker->bindParam(":adresid", $lastInsertId);
+
 
 $result_gebruiker = $stmt_gebruiker->execute();
 
 
 if ($result_adres && $result_gebruiker) {
+    session_start();
     $_SESSION["ID"] = $conn->lastInsertId();
+    $_SESSION["rol"] = "klant";
+    $_SESSION["firstname"] = $voornaam;
+    $_SESSION["lastname"] = $achternaam;
+    header("Location: dashboard.php");
 } else {
     echo "ERROR: Account aanmaken mislukt";
 }
