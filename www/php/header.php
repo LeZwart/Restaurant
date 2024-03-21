@@ -5,7 +5,9 @@
             <li><a href="dashboard.php">Dashboard</a></li>
             <li><a href="menu.php">Menu</a></li>
             <li><a href="bestellingen.php">Bestellingen</a></li>
-            <li><a href="logout.php">Uitloggen</a></li>
+
+            <li class="right-nav"><a href="account.php">Account</a></li>
+            <li class="right-nav"><a href="php/logout.php">Uitloggen</a></li>
         </ul>
     </nav>
 </Header>

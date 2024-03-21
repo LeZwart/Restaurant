@@ -19,7 +19,7 @@ if (isset($_SESSION["ID"])) {
         <main>
             <section class="form-section">
                 <h1>Inloggen</h1>
-                <form action="login_handler.php" class="login-form" method="post">
+                <form action="php/login_handler.php" class="login-form" method="post">
                     <div class="login-form-group">
                         <label for="email" class="login-form-label">E-mail</label>
                         <input type="email" id="email" name="email" class="login-form-input">

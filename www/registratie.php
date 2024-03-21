@@ -19,7 +19,7 @@ if (isset($_SESSION["ID"])) {
         <main>
             <section class="form-section">
                 <h1>Account aanmaken</h1>
-                <form action="registratie_handler.php" class="registratie-form" method="post">
+                <form action="php/registratie_handler.php" class="registratie-form" method="post">
                     <section class="registratie-form-group">
                         <h2>Accountgegevens</h2>
                         <div class="form-input">

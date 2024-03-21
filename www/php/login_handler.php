@@ -26,7 +26,7 @@ if ($error_state) {
     exit();
 }
 
-require "php/database.php";
+require "database.php";
 
 $sql = "SELECT * FROM gebruiker WHERE email = :email";
 $stmt = $conn->prepare($sql);
@@ -41,9 +41,9 @@ if ($result) {
         $_SESSION["rol"] = $result["rol"];
         $_SESSION["firstname"] = $result["voornaam"];
         $_SESSION["lastname"] = $result["achternaam"];
-        header("Location: dashboard.php");
+        header("Location: ../dashboard.php");
     }
 }
 
-header("Location: login.php")
+header("Location: ../login.php")
 ?>

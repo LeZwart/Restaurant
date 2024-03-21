@@ -1,6 +1,4 @@
 <?php
-
-//database connection   
 $dbhost = "mariadb";
 $dbuser = "root";
 $dbpass = "password";

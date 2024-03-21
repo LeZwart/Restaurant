@@ -16,13 +16,12 @@ if (isset($_SESSION["ID"])) {
     </head>
     <body>
         <main class="main-page-index">
-            <section class="main-section" id="text-section">
+            <section class="index-section" id="text-section">
                 <h1>Welkom bij het Oostenrijkse NOVA Restaurant</h1>
                 <p>Een heerlijke en gezellige avond beleef je bij ons!</p>
-                <img src="img/showcase_images/WienerSchnitzel.jpg" id="food-display">
-                <!-- Make this change images every like 10 seconds or so -->
+                <img src="img/showcase_images/5.jpg" id="food-display">
             </section>
-            <section class="main-section" id="button-section">
+            <section class="index-section" id="button-section">
                 <a href="registratie.php" class="main-page-button">Account aanmaken</a>
                 <a href="login.php" class="main-page-button">Inloggen</a>
                 <a href="menu.php" class="main-page-button">Menu</a>

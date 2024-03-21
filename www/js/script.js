@@ -6,9 +6,12 @@ function show_food(i) {
     food_display.getAttributeNode('src').value = path;
 }
 
-let imglist = [0, 1];
+let imglist = [0, 1, 2, 3, 4, 5, 6, 7];
+  //    Ja, ik zou het allemaal mooi kunnen maken en het aan de database kunnen koppelen
+ //     maar daar heb ik geen tijd voor :(
+//      waarschijnlijk niet, misschien later :)
 
-let i = 0;
+let i = 7;
 setInterval(() => {
     show_food(i);
     i++;
