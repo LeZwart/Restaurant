@@ -15,38 +15,38 @@
                         <h2>Accountgegevens</h2>
                         <div class="form-input">
                             <label for="email" class="form-label">E-mail</label>
-                            <input type="email" id="email" name="email" class="form-input">
+                            <input type="email" id="email" name="email" class="form-input" required>
                         </div>
                         <div class="form-input">
                             <label for="password" class="form-label">Wachtwoord</label>
-                            <input type="password" id="password" name="password" class="form-input">
+                            <input type="password" id="password" name="password" class="form-input"required>
                         </div>
                         <div class="form-input">
                             <label for="firstname" class="form-label">Voornaam</label>
-                            <input type="text" name="firstname">
+                            <input type="text" name="firstname"required>
                         </div>
                         <div class="form-input">
                             <label for="lastname" class="form-label">Achternaam</label>
-                            <input type="text" name="lastname">
+                            <input type="text" name="lastname"required>
                         </div>
                     </section>
                     <section class="registratie-form-group">
                         <h2>Adresgegevens</h2>
                         <div class="form-input">
                             <label for="street" class="form-label">Straatnaam</label>
-                            <input type="text" name="street">
+                            <input type="text" name="street"required>
                         </div class="form-input">
                         <div class="form-input">
                             <label for="huisnummer" class="form-label">Huisnummer</label>
-                            <input type="text" name="huisnummer">
+                            <input type="text" name="huisnummer"required>
                         </div>
                         <div class="form-input">
                             <label for="woonplaats" class="form-label">Woonplaats</label>
-                            <input type="text" name="woonplaats">
+                            <input type="text" name="woonplaats"required>
                         </div>
                         <div class="form-input">
                             <label for="postcode" class="form-label">Postcode</label>
-                            <input type="text" name="postcode">
+                            <input type="text" name="postcode"required>
                         </div>
                     </section>
                     <div class="form-input" style="grid-column: span 2;">

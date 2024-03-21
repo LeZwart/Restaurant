@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" onload="show_food(0)">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,7 +11,7 @@
             <section class="main-section" id="text-section">
                 <h1>Welkom bij het Oostenrijkse NOVA Restaurant</h1>
                 <p>Een heerlijke en gezellige avond beleef je bij ons!</p>
-                <img src="img/showcase_images/WienerSchnitzel.jpg" id="food-display" onclick="">
+                <img src="img/showcase_images/WienerSchnitzel.jpg" id="food-display">
                 <!-- Make this change images every like 10 seconds or so -->
             </section>
             <section class="main-section" id="button-section">
