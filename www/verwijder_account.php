@@ -19,7 +19,7 @@ if (!isset($_SESSION["ID"])) {
     <body>
         <?php require "php/header.php"; ?>
         <main>
-                <form action="php/registratie_handler.php" class="deletion-form" method="post">
+                <form action="php/delete_account_handler.php" class="deletion-form" method="post">
                     <h1>Account verwijderen</h1>
                     <p>Weet je zeker dat je je account wilt verwijderen?</p>
                     <br>
