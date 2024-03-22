@@ -15,6 +15,7 @@ if (isset($_SESSION["ID"])) {
         <title>NOVA Restaurant</title>
     </head>
     <body>
+        <?php require "php/header_no_login.php"; ?>
         <main class="main-page-index">
             <section class="index-section" id="text-section">
                 <h1>Welkom bij het Oostenrijkse NOVA Restaurant</h1>
@@ -24,7 +25,7 @@ if (isset($_SESSION["ID"])) {
             <section class="index-section" id="button-section">
                 <a href="registratie.php" class="main-page-button">Account aanmaken</a>
                 <a href="login.php" class="main-page-button">Inloggen</a>
-                <a href="menu.php" class="main-page-button">Menu</a>
+                <a href="menukaart.php" class="main-page-button">Menukaart</a>
             </section>
         </main>
         

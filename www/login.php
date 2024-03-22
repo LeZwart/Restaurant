@@ -16,6 +16,7 @@ if (isset($_SESSION["ID"])) {
         <title>NOVA Restaurant</title>
     </head>
     <body>
+        <?php require "php/header_no_login.php"; ?>
         <main>
             <section class="form-section">
                 <h1>Inloggen</h1>

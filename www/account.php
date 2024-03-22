@@ -33,7 +33,7 @@ $adres = $stmt->fetch(PDO::FETCH_ASSOC);
     <body>
         <?php require "php/header.php"; ?>
         <main>
-            <section class="main-section">
+            <section class="main-section account-section">
                 <section class="test-section">
 
                 </section>

@@ -20,7 +20,7 @@ body {
     background-color: rgba(255, 255, 255, 0.123);
 
     width: 100vw;
-    height: 100vh;
+    height: 150vh;
 }
 
 main {
@@ -28,8 +28,8 @@ main {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
 
     color: #FFF;
     text-align: center;
@@ -284,11 +284,14 @@ li a:hover {
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.3);
-    height: 80%;
+    border-top: none;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    height: 100%;
     width: 80%;
 }
 
-.main-section {
+.account-section {
     display: grid;
     grid-template-columns: 2fr 2fr 1fr;
 }
@@ -345,4 +348,16 @@ li a:hover {
     border: 1px solid rgba(255, 255, 255, 0.3);
     box-shadow: 0 0 10px 5px #0000002f;
     text-shadow: 1px 1px 2px #000;
+}
+
+.menu-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: 2%;
+    height: fit-content;
+    min-height: 100%;
 }
