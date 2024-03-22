@@ -20,9 +20,10 @@ if (!isset($_SESSION["ID"])) {
         <?php require "php/header.php"; ?>
         <main>
             <section class="main-section">
-                <h1>Welkom bij NOVA Restaurant</h1>
-                <p>Welkom bij NOVA Restaurant, <?php echo $_SESSION["firstname"]; ?>!</p>
-                <p>Je bent nu ingelogd en kunt beginnen met het bestellen van heerlijke gerechten.</p>
+                <h2>Welkom bij NOVA Restaurant, <?php echo $_SESSION["firstname"]; ?>!</h2>
+
+                <section>
+                </section>
             </section>
         </main>
         <?php require "php/footer.php"; ?>

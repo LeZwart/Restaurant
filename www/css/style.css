@@ -293,7 +293,12 @@ li a:hover {
 
 .account-section {
     display: grid;
-    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-columns: 1fr 2fr 2fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: 2%;
 }
 
 .info-section {
@@ -360,4 +365,9 @@ li a:hover {
     margin: 2%;
     height: fit-content;
     min-height: 100%;
+}
+
+.account-input {
+    border-radius: 5px;
+    height: 10px;
 }
