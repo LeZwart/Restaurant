@@ -30,7 +30,7 @@ if (isset($_SESSION["ID"])) {
                         <input type="password" id="password" name="password" class="login-form-input">
                     </div>
                     <button type="submit" class="login-button">Log in</button>
-                    <a href="registratie.php">Heb je nog geen account? Maak er een aan</a>
+                    <a class="link" href="registratie.php">Heb je nog geen account? Maak er een aan</a>
                 </form>
             </section>
         </main>

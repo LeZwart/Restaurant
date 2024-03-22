@@ -61,7 +61,7 @@ if (isset($_SESSION["ID"])) {
                     </section>
                     <div class="form-input" style="grid-column: span 2;">
                         <button type="submit" class="registratie-button">Account aanmaken</button>
-                        <a href="login.php">Heb je al een account? Log in</a>
+                        <a class="link" href="login.php">Heb je al een account? Log in</a>
                     </div>
                 </form>
             </section>

@@ -101,6 +101,18 @@ main {
     transition: all 4s ease-in-out;
 }
 
+.link {
+    color: #FFF;
+}
+
+.link:hover {
+    color: #c8dde3;
+}
+
+.link:visited {
+    color: #FFF;
+}
+
 .login-form {
     display: flex;
     flex-direction: column;
@@ -276,7 +288,6 @@ li a:hover {
 .main-section {
     display: flex;
     flex-direction: column;
-    align-items: center;
     background: rgba(255, 255, 255, 0);
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
@@ -370,4 +381,18 @@ li a:hover {
 .account-input {
     border-radius: 5px;
     height: 10px;
+}
+
+.side-nav {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(205, 201, 245, 0.096);
+    width: 20%;
+    border-right: 1px solid #ffffff;
+}
+
+.side-nav-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
