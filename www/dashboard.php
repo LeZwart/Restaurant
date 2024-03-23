@@ -20,8 +20,6 @@ if (!isset($_SESSION["ID"])) {
         <?php require "php/header.php"; ?>
         <main>
             <section class="main-section">
-                <h2>Welkom bij NOVA Restaurant, <?php echo $_SESSION["firstname"]; ?>!</h2>
-
                 <nav class="side-nav">
                     <ul class="side-nav-list">
                         <li class="side-nav-item">

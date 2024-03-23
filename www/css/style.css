@@ -388,7 +388,9 @@ li a:hover {
     flex-direction: column;
     background-color: rgba(205, 201, 245, 0.096);
     width: 20%;
+    height: 100%;
     border-right: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
 }
 
 .side-nav-item {
