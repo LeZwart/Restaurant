@@ -287,7 +287,7 @@ li a:hover {
 
 .main-section {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     background: rgba(255, 255, 255, 0);
     border-top-left-radius: 16px;
     border-top-right-radius: 16px;
@@ -397,4 +397,38 @@ li a:hover {
     display: flex;
     flex-direction: column;
     width: 100%;
+}
+
+.user-data-form {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin: 15%;
+    padding: 10%;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    
+}
+
+.user-data-form input {
+    color: #ffffff;
+    text-shadow: 1px 1px 0px #000;
+    width: 300px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.167);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 5px;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.user-data-form input:focus,
+.user-data-form input:hover {
+    background-color: #ffffff2f;
+    box-shadow: 0 0 10px 5px #ffffff2f;
+    border: 1px solid #ffffff49;
+    transition: all 0.3s ease-in-out;
+    outline: none;
 }

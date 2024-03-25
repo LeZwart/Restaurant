@@ -33,10 +33,11 @@ $adres = $stmt->fetch(PDO::FETCH_ASSOC);
     <body>
         <?php require "php/header.php"; ?>
         <main>
-            <section class="main-section account-section">
+            <section class="main-section">
+                <?php require "php/sideheader.php" ?>
                 <section class="">
                     <h2>Accountgegevens</h2>
-                    <form action="php/account_update_handler.php" method="post">
+                    <form action="php/account_update_handler.php" method="post" class="user-data-form">
                         <label for="voornaam">Voornaam</label>
                         <input type="text" value="<?php echo $gebruiker["voornaam"] ?>">
 
@@ -63,10 +64,6 @@ $adres = $stmt->fetch(PDO::FETCH_ASSOC);
                 </section>
                 <section class="">
                     
-                </section>
-
-                <section class="">
-                    <a class="option-btn" style="background-color: red;" href="verwijder_account.php">Verwijder Account</a>
                 </section>
             </section>
         </main>
