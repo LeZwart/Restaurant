@@ -4,7 +4,7 @@
             <a href="bestellingen.php" class="side-nav-link">Bestellingen</a>
         </li>
         <li class="side-nav-item">
-            <a href="menu.php" class="side-nav-link">Menu</a>
+            <a href="menukaart.php" class="side-nav-link">Menukaart</a>
         </li>
         <li class="side-nav-item">
             <a href="reserveringen.php" class="side-nav-link">Reserveringen</a>

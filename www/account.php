@@ -35,9 +35,10 @@ $adres = $stmt->fetch(PDO::FETCH_ASSOC);
         <main>
             <section class="main-section">
                 <?php require "php/sideheader.php" ?>
-                <section class="">
-                    <h2>Accountgegevens</h2>
+                <section>
+                    
                     <form action="php/account_update_handler.php" method="post" class="user-data-form">
+                        <h2>Accountgegevens</h2>
                         <label for="voornaam">Voornaam</label>
                         <input type="text" value="<?php echo $gebruiker["voornaam"] ?>">
 
@@ -62,8 +63,21 @@ $adres = $stmt->fetch(PDO::FETCH_ASSOC);
                         <input type="submit" value="Opslaan" class="option-btn">
                     </form>
                 </section>
-                <section class="">
-                    
+                <section>
+                    <form action="php/account_password_handler.php" method="post" class="user-data-form">
+                        <h2>Wachtwoord wijzigen</h2>
+                        <label for="oud-wachtwoord">Oud wachtwoord</label>
+                        <input type="password">
+
+                        <label for="nieuw-wachtwoord">Nieuw wachtwoord</label>
+                        <input type="password">
+
+                        <label for="herhaal-wachtwoord">Herhaal wachtwoord</label>
+                        <input type="password">
+
+                        <input type="submit" value="Opslaan" class="option-btn">
+                    </form>
+                    <a class="deletion-btn" href="verwijder_account.php">ACCOUNT VERWIJDEREN</a>
                 </section>
             </section>
         </main>
