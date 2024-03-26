@@ -23,7 +23,11 @@ require "php/database.php";
         <main>
             
             <section class="main-section ">
-                
+                <?php 
+                if (checkPermissions("Medewerker")) {
+                    require "php/sideheader.php";
+                }
+                ?>
             </section>
         </main>
         <?php require "php/footer.php"; ?>

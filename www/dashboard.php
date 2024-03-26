@@ -20,7 +20,11 @@ if (!isset($_SESSION["ID"])) {
         <?php require "php/header.php"; ?>
         <main>
             <section class="main-section">
-                <?php require "php/sideheader.php" ?>
+                <?php 
+                if (checkPermissions("Medewerker")) {
+                    require "php/sideheader.php";
+                }
+                ?>
                 
             </section>
         </main>

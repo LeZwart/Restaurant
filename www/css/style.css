@@ -434,3 +434,9 @@ li a:hover {
     transition: all 0.3s ease-in-out;
     outline: none;
 }
+
+.white-hr {
+    margin: 10px;
+    border: 1px solid #ffffff;
+    width: 90%;
+}

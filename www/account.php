@@ -34,7 +34,11 @@ $adres = $stmt->fetch(PDO::FETCH_ASSOC);
         <?php require "php/header.php"; ?>
         <main>
             <section class="main-section">
-                <?php require "php/sideheader.php" ?>
+                <?php 
+                if (checkPermissions("Medewerker")) {
+                    require "php/sideheader.php";
+                }
+                ?>
                 <section>
                     
                     <form action="php/account_update_handler.php" method="post" class="user-data-form">

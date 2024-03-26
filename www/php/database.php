@@ -30,3 +30,27 @@ if (isset($_SESSION["ID"])) {
         header("Location: index.php");
     }
 }
+
+
+// Checkt of de gebruiker de juiste permissies heeft
+function checkPermissions($requiredRole) {
+    
+    // level van rollen
+    $roles = [
+        "Klant" => 0,
+        "Medewerker" => 1,
+        "Manager" => 2,
+        "Directeur" => 3
+    ];
+
+    if (isset($_SESSION["rol"]) && isset($roles[$requiredRole])) {
+
+        // level van de gebruiker en de vereiste rol
+        $userRoleLevel = $roles[$_SESSION["rol"]];
+        $requiredRoleLevel = $roles[$requiredRole];
+        
+        // Vergelijk levels
+        return $userRoleLevel >= $requiredRoleLevel;
+    }
+    return false;
+}
