@@ -20,7 +20,7 @@ body {
     background-color: rgba(255, 255, 255, 0.123);
 
     width: 100vw;
-    height: 150vh;
+    height: fit-content;
 }
 
 main {
@@ -29,7 +29,7 @@ main {
     align-items: center;
     justify-content: center;
     width: 100vw;
-    height: 100vh;
+    height: fit-content;
 
     color: #FFF;
     text-align: center;
@@ -439,4 +439,13 @@ li a:hover {
     margin: 10px;
     border: 1px solid #ffffff;
     width: 90%;
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: fit-content;
+    align-items: center;
+    justify-content: center;
 }

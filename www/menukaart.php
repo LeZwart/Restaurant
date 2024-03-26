@@ -28,6 +28,37 @@ require "php/database.php";
                     require "php/sideheader.php";
                 }
                 ?>
+
+                <section class="menu-container">
+                    <article class="menu-item">
+                        <img src="https://placehold.co/200">
+                    </article>
+                    <article class="menu-item">
+                        <img src="https://placehold.co/200">
+                    </article>
+                    <article class="menu-item">
+                        <img src="https://placehold.co/200">
+                    </article>
+                    <article class="menu-item">
+                        <img src="https://placehold.co/200">
+                    </article>
+                    <article class="menu-item">
+                        <img src="https://placehold.co/200">
+                    </article>
+                    <article class="menu-item">
+                        <img src="https://placehold.co/200">
+                    </article>
+                    <article class="menu-item">
+                        <img src="https://placehold.co/200">
+                    </article>
+                    <article class="menu-item">
+                        <img src="https://placehold.co/200">
+                    </article>
+                    <article class="menu-item">
+                        <img src="https://placehold.co/200">
+                    </article>
+                </section>
+                
             </section>
         </main>
         <?php require "php/footer.php"; ?>
