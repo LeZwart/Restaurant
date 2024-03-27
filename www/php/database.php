@@ -5,7 +5,7 @@ $dbpass = "password";
 $dbname = "restaurant_nova";
 
 try {
-    global $conn = new PDO("mysql:host=$dbhost;dbname=$dbname", $dbuser, $dbpass);
+    $conn = new PDO("mysql:host=$dbhost;dbname=$dbname", $dbuser, $dbpass);
 } catch (PDOException $e) {
     echo "Error: " . $e->getMessage();
 }
@@ -55,7 +55,7 @@ function checkPermissions($requiredRole) {
     return false;
 }
 
-function GetUser($id) {
+function GetUser($id, $conn) {
     $sql = "SELECT * FROM gebruiker WHERE gebruikerid = :gebruikerid";
     $stmt = $conn->prepare($sql);
     $stmt->bindParam(":gebruikerid", $id);
@@ -65,11 +65,13 @@ function GetUser($id) {
     return $gebruiker;
 }
 
-function GetUserAdres($id) {
+function GetUserAdres($id, $conn) {
     $sql = "SELECT * FROM adres WHERE adresid = :adresid";
     $stmt = $conn->prepare($sql);
-    $stmt->bindParam(":adresid", GetUser($id)["adresid"]);
+    $stmt->bindParam(":adresid", GetUser($id, $conn)["adresid"]);
     $stmt->execute();
 
     $adres = $stmt->fetch(PDO::FETCH_ASSOC);
-}
+
+    return $adres;
+    }

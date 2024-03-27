@@ -25,7 +25,6 @@ if (!isset($_SESSION["ID"])) {
                     require "php/sideheader.php";
                 }
                 ?>
-                
             </section>
         </main>
         <?php require "php/footer.php"; ?>

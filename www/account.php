@@ -6,8 +6,9 @@ if (!isset($_SESSION["ID"])) {
     exit();
 }
 
-$gebruiker = GetUser($_SESSION["ID"]);
-$adres = GetUserAdres($_SESSION["ID"]);
+$ID = $_SESSION["ID"];
+$gebruiker = GetUser($ID, $conn);
+$adres = GetUserAdres($ID, $conn);
 
 ?>
 
