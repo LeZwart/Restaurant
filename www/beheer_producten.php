@@ -48,7 +48,7 @@ $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
                             <th>Naam</th>
                             <th>Categorie</th>
                             <th>Menugang</th>
-                            <th>Vegetarisch</th>
+                            <th>Vega</th>
                             <th>Voorraad</th>
                             <th>Acties</th>
                         </tr>
@@ -56,9 +56,9 @@ $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
                             <?php 
                             if ($product["is_vega"] == 1) {
-                                $product["is_vega"] = "Ja";
+                                $product["is_vega"] = "background-color: #86e394;";
                             } else {
-                                $product["is_vega"] = "Nee";
+                                $product["is_vega"] = "background-color: #ed6172;";
                             }
                                 ?>
 
@@ -67,7 +67,7 @@ $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
                                 <td><?php echo $product["naam"]; ?></td>
                                 <td><?php echo $product["categorienaam"]; ?></td>
                                 <td><?php echo $product["menugangnaam"]; ?></td>
-                                <td><?php echo $product["is_vega"]; ?></td>        
+                                <td style="<?php echo $product["is_vega"]?>"></td>        
                                 <td><?php echo $product["aantal_voorraad"]; ?></td>
                                 <td>
                                     <a href="product_bewerken.php?id=<?php echo $product["productid"]; ?>">Bewerken</a>
