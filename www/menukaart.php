@@ -2,6 +2,12 @@
 session_start();
 require "php/database.php";
 
+$SQL = "SELECT * FROM menugang";
+$stmt = $conn->prepare($SQL);
+$stmt->execute();
+$menugangen = $stmt->fetchAll(PDO::FETCH_ASSOC);
+
+
 ?>
 
 <!DOCTYPE html>
@@ -30,33 +36,14 @@ require "php/database.php";
                 ?>
 
                 <section class="menu-container">
-                    <article class="menu-item">
-                        <img src="https://placehold.co/200">
+                    <?php foreach ($menugangen as $menugang): ?>
+                        <article class="menu-item">
+                        <a href="#">
+                            <img src="https://placehold.co/200">
+                            <h3><?php echo $menugang["naam"]; ?></h3>
+                        </a>
                     </article>
-                    <article class="menu-item">
-                        <img src="https://placehold.co/200">
-                    </article>
-                    <article class="menu-item">
-                        <img src="https://placehold.co/200">
-                    </article>
-                    <article class="menu-item">
-                        <img src="https://placehold.co/200">
-                    </article>
-                    <article class="menu-item">
-                        <img src="https://placehold.co/200">
-                    </article>
-                    <article class="menu-item">
-                        <img src="https://placehold.co/200">
-                    </article>
-                    <article class="menu-item">
-                        <img src="https://placehold.co/200">
-                    </article>
-                    <article class="menu-item">
-                        <img src="https://placehold.co/200">
-                    </article>
-                    <article class="menu-item">
-                        <img src="https://placehold.co/200">
-                    </article>
+                    <?php endforeach; ?>
                 </section>
                 
             </section>

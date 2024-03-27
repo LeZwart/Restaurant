@@ -301,7 +301,8 @@ li a:hover {
     border-top: none;
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;
-    height: 100vh;
+    min-height: 100vh;
+    height: fit-content;
     width: 80%;
 }
 
@@ -389,17 +390,18 @@ li a:hover {
 .side-nav {
     display: flex;
     flex-direction: column;
-    background-color: rgba(205, 201, 245, 0.096);
+    background-color: rgba(205, 201, 245, 0.1);
     width: 20%;
     height: 100%;
     border-right: 1px solid #ffffff;
     border-bottom: 1px solid #ffffff;
+    border-bottom-right-radius: 40px;
 }
 
 .side-nav-item {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 100%;   
 }
 
 .user-data-form {
@@ -411,6 +413,7 @@ li a:hover {
     padding: 10%;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     width: fit-content;
+    border-bottom-right-radius: 40px;
     
 }
 
@@ -445,10 +448,77 @@ li a:hover {
 }
 
 .menu-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    height: fit-content;
+}
+
+.menu-item {
+    transition: all 0.3s ease-in-out;
+    margin: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #ffffff44;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item:hover {
+    background-color: #ffffff2f;
+    border-radius: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.menu-item img {
+    border-radius: 5%;
+}
+
+.menu-item a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+table {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    height: fit-content;
     align-items: center;
     justify-content: center;
+    margin: 2%;
+    background-color: #ffffff2f;
+    font-size: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 1px solid #ffffff;
+}
+
+th {
+    background-color: #ffffff2f;
+    color: #FFF;
+    border: 1px solid #ffffff;
+}
+
+td {
+    background-color: #ffffff2f;
+    color: #FFF;
+    border: 1px solid #ffffff;
+}
+
+tr {
+    transition: all 0.2s ease-in-out;
+    border: 1px solid #eeeeee;
+}
+
+tr:hover {
+    background-color: #ffffff55;
+    transition: all 0.2s ease-in-out;
+}
+
+tr a {
+    color: #FFF;
+    text-shadow: 0px 1px 1px #000;
+    text-decoration: none;
+    font-size: large;
+}
+
+tr a:hover {
+    color: #00c8ff;
 }
