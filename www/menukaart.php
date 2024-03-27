@@ -40,6 +40,7 @@ $menugangen = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         <article class="menu-item">
                         <a href="#">
                             <img src="https://placehold.co/200">
+                            <hr class="white-hr">
                             <h3><?php echo $menugang["naam"]; ?></h3>
                         </a>
                     </article>
