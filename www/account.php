@@ -6,19 +6,8 @@ if (!isset($_SESSION["ID"])) {
     exit();
 }
 
-$sql = "SELECT * FROM gebruiker WHERE gebruikerid = :gebruikerid";
-$stmt = $conn->prepare($sql);
-$stmt->bindParam(":gebruikerid", $_SESSION["ID"]);
-$stmt->execute();
-
-$gebruiker = $stmt->fetch(PDO::FETCH_ASSOC);
-
-$sql = "SELECT * FROM adres WHERE adresid = :adresid";
-$stmt = $conn->prepare($sql);
-$stmt->bindParam(":adresid", $gebruiker["adresid"]);
-$stmt->execute();
-
-$adres = $stmt->fetch(PDO::FETCH_ASSOC);
+$gebruiker = GetUser($_SESSION["ID"]);
+$adres = GetUserAdres($_SESSION["ID"]);
 
 ?>
 
