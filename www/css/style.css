@@ -434,6 +434,36 @@ li a:hover {
     transition: all 0.3s ease-in-out;
 }
 
+.user-input-form textarea {
+    color: #ffffff;
+    text-shadow: 1px 1px 0px #000;
+    width: 300px;
+    height: 100px;
+    background: rgba(255, 255, 255, 0.167);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 5px;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.user-input-form select {
+    color: #ffffff;
+    text-shadow: 1px 1px 0px #000;
+    width: 300px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.167);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 5px;
+    font-size: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
 .user-data-form input:focus,
 .user-data-form input:hover {
     background-color: #ffffff2f;

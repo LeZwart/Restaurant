@@ -79,9 +79,9 @@ $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
                 </section>
                 <nav class="product-action-nav">
                         <ul>
-                            <li><a href="product_create.php">Product toevoegen</a></li>
-                            <li><a href="categorie_create">Categorie toevoegen</a></li>
-                            <li><a href="menugang_create.php">Menugang toevoegen</a></li>
+                            <li><a href="product_create.php">Product toevoegen</a></li>         <!-- how unfishable, that the fish fished the fish-->
+                            <li><a href="categorie_create.php">Categorie toevoegen</a></li>     <!-- how unfishable, that the fish fished the fish-->
+                            <li><a href="menugang_create.php">Menugang toevoegen</a></li>       <!-- how unfishable, that the fish fished the fish-->
                         </ul>
                     </nav>
             </section>
