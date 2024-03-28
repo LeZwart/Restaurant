@@ -17,7 +17,6 @@ $stmt->bindParam(":ID", $ID);
 $stmt->execute();
 
 $adresid = $stmt->fetch(PDO::FETCH_ASSOC)["adresid"];
-var_dump($adresid);
 
 // delete gebruiker
 $sql = "DELETE FROM gebruiker WHERE gebruikerid = :ID";

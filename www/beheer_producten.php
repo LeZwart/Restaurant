@@ -2,7 +2,7 @@
 session_start();
 require "php/database.php";
 
-$SQL = "SELECT *, menugang.naam AS menugangnaam, product_categorie.categorie AS categorienaam
+$SQL = "SELECT *, menugang.naam AS menugangnaam, product.naam AS productnaam, product_categorie.categorie AS categorienaam
         FROM product 
         JOIN menugang ON product.menugangid = menugang.menugangid
         JOIN product_categorie ON product.categorieid = product_categorie.categorieid";
@@ -40,8 +40,8 @@ $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
                     require "php/sideheader.php";
                 }
                 ?>
-
                 <section class="menu-container">
+
                     <table>
                         <tr>
                             <th>Product ID</th>
@@ -64,7 +64,7 @@ $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
                             <tr>
                                 <td><?php echo $product["productid"]; ?></td>
-                                <td><?php echo $product["naam"]; ?></td>
+                                <td><?php echo $product["productnaam"]; ?></td>
                                 <td><?php echo $product["categorienaam"]; ?></td>
                                 <td><?php echo $product["menugangnaam"]; ?></td>
                                 <td style="<?php echo $product["is_vega"]?>"></td>        
@@ -77,7 +77,13 @@ $products = $stmt->fetchAll(PDO::FETCH_ASSOC);
                         <?php endforeach; ?>
                     </table>
                 </section>
-                
+                <nav class="product-action-nav">
+                        <ul>
+                            <li><a href="product_create.php">Product toevoegen</a></li>
+                            <li><a href="categorie_create">Categorie toevoegen</a></li>
+                            <li><a href="menugang_create.php">Menugang toevoegen</a></li>
+                        </ul>
+                    </nav>
             </section>
         </main>
         <?php require "php/footer.php"; ?>

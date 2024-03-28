@@ -74,4 +74,4 @@ function GetUserAdres($id, $conn) {
     $adres = $stmt->fetch(PDO::FETCH_ASSOC);
 
     return $adres;
-    }
+}

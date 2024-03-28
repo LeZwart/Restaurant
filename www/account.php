@@ -31,28 +31,28 @@ $adres = GetUserAdres($ID, $conn);
                 ?>
                 <section>
                     
-                    <form action="php/account_update_handler.php" method="post" class="user-data-form">
+                    <form action="php/account_update_handler.php" method="POST" class="user-data-form">
                         <h2>Accountgegevens</h2>
                         <label for="voornaam">Voornaam</label>
-                        <input type="text" value="<?php echo $gebruiker["voornaam"] ?>">
+                        <input type="text" name="voornaam" value="<?php echo $gebruiker["voornaam"] ?>">
 
                         <label for="achternaam">Achternaam</label>
-                        <input type="text" value="<?php echo $gebruiker["achternaam"] ?>">
+                        <input type="text" name="achternaam" value="<?php echo $gebruiker["achternaam"] ?>">
 
                         <label for="straatnaam">Straatnaam</label>
-                        <input type="text" value="<?php echo $adres["straatnaam"] ?>">
+                        <input type="text" name="straatnaam" value="<?php echo $adres["straatnaam"] ?>">
 
                         <label for="huisnummer">Huisnummer</label>
-                        <input type="text" value="<?php echo $adres["huisnummer"] ?>">
+                        <input type="text" name="huisnummer" value="<?php echo $adres["huisnummer"] ?>">
 
                         <label for="postcode">Postcode</label>
-                        <input type="text" value="<?php echo $adres["postcode"] ?>">
+                        <input type="text" name="postcode" value="<?php echo $adres["postcode"] ?>">
 
                         <label for="woonplaats">Woonplaats</label>
-                        <input type="text" value="<?php echo $adres["woonplaats"] ?>">
+                        <input type="text" name="woonplaats" value="<?php echo $adres["woonplaats"] ?>">
 
                         <label for="email">E-mail</label>
-                        <input type="text" value="<?php echo $gebruiker["email"] ?>">
+                        <input type="text" name="email" value="<?php echo $gebruiker["email"] ?>">
 
                         <input type="submit" value="Opslaan" class="option-btn">
                     </form>

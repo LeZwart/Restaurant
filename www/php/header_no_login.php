@@ -1,7 +1,7 @@
 <Header>
     <nav class="nav-header">
         <ul class="ul-header">
-            <li>NOVA Restaurant</li>
+            <li><a href="index.php">NOVA Restaurant</a></li>
             <li><a href="index.php">Home</a></li>
             <li><a href="menukaart.php">Menukaart</a></li>
             
