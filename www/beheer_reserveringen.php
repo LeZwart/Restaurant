@@ -6,6 +6,11 @@ if (!isset($_SESSION["ID"])) {
     exit();
 }
 
+if (!checkPermissions("Medewerker")) {
+    header("Location: dashboard.php");
+    exit();
+}
+
 ?>
 
 <!DOCTYPE html>
