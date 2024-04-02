@@ -40,6 +40,7 @@ if (!checkPermissions("Medewerker")) {
                             <th>Postcode</th>
                             <th>Woonplaats</th>
                             <th>Rol</th>
+                            <?php if (checkPermissions("Manager")) { echo "<th>Acties</th>"; }?>
                         </tr>
                         <?php
                         $query = "  SELECT gebruiker.voornaam, gebruiker.achternaam, gebruiker.email, adres.straatnaam, adres.huisnummer, adres.postcode, adres.woonplaats, gebruiker.rol 
@@ -59,6 +60,9 @@ if (!checkPermissions("Medewerker")) {
                             <td><?php echo $row["postcode"]; ?></td>
                             <td><?php echo $row["woonplaats"]; ?></td>
                             <td><?php echo $row["rol"]; ?></td>
+                            <?php if (checkPermissions("Manager")) { 
+                                
+                             }?>
                         </tr>
                         <?php endforeach; ?>
                     </table>
